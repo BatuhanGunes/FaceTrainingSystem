@@ -41,13 +41,13 @@
             // 
             this.cameraBox.Location = new System.Drawing.Point(12, 12);
             this.cameraBox.Name = "cameraBox";
-            this.cameraBox.Size = new System.Drawing.Size(637, 592);
+            this.cameraBox.Size = new System.Drawing.Size(480, 360);
             this.cameraBox.TabIndex = 2;
             this.cameraBox.TabStop = false;
             // 
             // buttonBaslat
             // 
-            this.buttonBaslat.Location = new System.Drawing.Point(717, 12);
+            this.buttonBaslat.Location = new System.Drawing.Point(520, 22);
             this.buttonBaslat.Name = "buttonBaslat";
             this.buttonBaslat.Size = new System.Drawing.Size(114, 39);
             this.buttonBaslat.TabIndex = 3;
@@ -57,7 +57,7 @@
             // 
             // buttonKaydet
             // 
-            this.buttonKaydet.Location = new System.Drawing.Point(717, 160);
+            this.buttonKaydet.Location = new System.Drawing.Point(520, 154);
             this.buttonKaydet.Name = "buttonKaydet";
             this.buttonKaydet.Size = new System.Drawing.Size(114, 36);
             this.buttonKaydet.TabIndex = 4;
@@ -67,15 +67,15 @@
             // 
             // textBoxIsim
             // 
-            this.textBoxIsim.Location = new System.Drawing.Point(756, 107);
+            this.textBoxIsim.Location = new System.Drawing.Point(520, 107);
             this.textBoxIsim.Name = "textBoxIsim";
-            this.textBoxIsim.Size = new System.Drawing.Size(100, 20);
+            this.textBoxIsim.Size = new System.Drawing.Size(114, 20);
             this.textBoxIsim.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(717, 110);
+            this.label1.Location = new System.Drawing.Point(517, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(25, 13);
             this.label1.TabIndex = 6;
@@ -85,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 632);
+            this.ClientSize = new System.Drawing.Size(651, 388);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxIsim);
             this.Controls.Add(this.buttonKaydet);

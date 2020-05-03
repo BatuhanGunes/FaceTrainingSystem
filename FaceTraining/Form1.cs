@@ -58,7 +58,7 @@ namespace FaceTraining
         private void ButtonKaydet_Click(object sender, EventArgs e)
         {
             Count += 1;
-            grayFace = camera.QueryGrayFrame().Resize(320, 240, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC);
+            grayFace = camera.QueryGrayFrame().Resize(480, 360, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC);
             MCvAvgComp[][] DetectedFaces = grayFace.DetectHaarCascade(faceDetected, 1.2, 10, Emgu.CV.CvEnum.HAAR_DETECTION_TYPE.DO_CANNY_PRUNING, new Size(20, 20));
             foreach (MCvAvgComp f in DetectedFaces[0])
             {
@@ -80,7 +80,7 @@ namespace FaceTraining
         private void FrameProcedure(object sender, EventArgs e)
         {
             Users.Add("");
-            Frame = camera.QueryFrame().Resize(320, 240, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC);
+            Frame = camera.QueryFrame().Resize(480, 360, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC);
             grayFace = Frame.Convert<Gray, Byte>();
             MCvAvgComp[][] facesDetectedNow = grayFace.DetectHaarCascade(faceDetected, 1.2, 10, Emgu.CV.CvEnum.HAAR_DETECTION_TYPE.DO_CANNY_PRUNING, new Size(20, 20));
             foreach(MCvAvgComp f in facesDetectedNow[0])
